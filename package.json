@@ -1,0 +1,25 @@
+{
+  "name": "rpg-webapp",
+  "version": "0.1.0",
+  "description": "A helper app for remote RPG sessions.",
+  "main": "index.js",
+  "scripts": {
+    "dev-ui": "snowpack dev",
+    "build-ui": "snowpack build",
+    "watch-srv": "tsc --watch",
+    "watch-build": "nodemon build/index.js",
+    "dev-srv": "concurrently \"npm:watch-*\"",
+    "build-srv": "tsc",
+    "build": "npm run build-ui && npm run build-srv",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf build"
+  },
+  "author": "Jakub Lewczyński",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "nodemon": "^2.0.15",
+    "snowpack": "^3.8.8",
+    "typescript": "^4.5.5"
+  }
+}
