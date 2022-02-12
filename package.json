@@ -2,7 +2,6 @@
   "name": "rpg-webapp",
   "version": "0.1.0",
   "description": "A helper app for remote RPG sessions.",
-  "main": "index.js",
   "scripts": {
     "dev-ui": "snowpack dev",
     "build-ui": "snowpack build",
@@ -14,7 +13,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf build"
   },
-  "author": "Jakub Lewczyński",
+  "author": "Jakub Lewczyński <j.lewczynski@gmail.com>",
+  "homepage": "https://github.com/jlewczynski/rpg-webapp#README.md",
+  "repository": "github:jlewczynski/rpg-webapp",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^7.0.0",
