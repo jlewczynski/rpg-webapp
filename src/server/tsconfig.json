@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "../../build",
+    "paths": {
+      "shared/*": [ "../shared/*" ]
+    },
+    "module": "CommonJS",
+    "composite": true
+  },
+  "include": [
+    "**/*"
+  ],
+  "references": [
+    { "path": "../shared" }
+  ]
+}

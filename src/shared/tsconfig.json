@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "../../build/node_modules/shared",
+    "composite": true
+  },
+  "include": [
+    "**/*"
+  ]
+}

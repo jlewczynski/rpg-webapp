@@ -6,10 +6,10 @@
   "scripts": {
     "dev-ui": "snowpack dev",
     "build-ui": "snowpack build",
-    "watch-srv": "tsc --watch",
+    "watch-srv": "tsc -b src/server --watch",
     "watch-build": "nodemon build/index.js",
     "dev-srv": "concurrently \"npm:watch-*\"",
-    "build-srv": "tsc",
+    "build-srv": "tsc -b src/server",
     "build": "npm run build-ui && npm run build-srv",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf build"
