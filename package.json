@@ -6,7 +6,7 @@
     "dev-ui": "snowpack dev",
     "build-ui": "snowpack build",
     "watch-srv": "tsc -b src/server --watch",
-    "watch-build": "nodemon build/index.js",
+    "watch-build": "DEV_MODE=1 nodemon build/index.js",
     "dev-srv": "concurrently \"npm:watch-*\"",
     "build-srv": "tsc -b src/server",
     "build": "npm run build-ui && npm run build-srv",
@@ -24,6 +24,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.2"
   }
 }

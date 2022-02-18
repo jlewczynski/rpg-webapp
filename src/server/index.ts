@@ -1,10 +1,13 @@
 import express from 'express';
 import { join } from 'path';
+import cors from 'cors';
 
 const app = express();
 const port: number = 8888;
 
-app.get('/api/*', (req, res) => {
+console.log(process.env);
+
+app.get('/api/*', cors(), (req, res) => {
   res.send('Hello, API!');
 });
 app.use(express.static(join(__dirname, 'ui')));
