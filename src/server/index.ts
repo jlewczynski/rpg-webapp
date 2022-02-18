@@ -1,9 +1,17 @@
-import { printAMessage } from "./routes/api";
-import { blabber } from "shared/utils";
-const port: number = 8080;
+import express from 'express';
+import { join } from 'path';
 
-console.log(`Server will serve on port ${port}... when it's ready!`);
-console.log('Some more info!');
-console.log('Even moar info!');
-printAMessage("File importing works!");
-printAMessage(blabber(10));
+const app = express();
+const port: number = 8888;
+
+app.get('/api/*', (req, res) => {
+  res.send('Hello, API!');
+});
+app.use(express.static(join(__dirname, 'ui')));
+app.get('/*', (req, res) => {
+  res.sendFile(join(__dirname, 'ui', 'index.html'));
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});

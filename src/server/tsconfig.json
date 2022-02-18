@@ -5,6 +5,7 @@
       "shared/*": [ "../shared/*" ]
     },
     "module": "CommonJS",
+    "esModuleInterop": true,
     "composite": true
   },
   "include": [
