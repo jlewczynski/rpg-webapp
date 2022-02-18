@@ -1,11 +1,10 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "../../build",
     "paths": {
       "shared/*": [ "../shared/*" ]
     },
-    "module": "CommonJS",
-    "esModuleInterop": true,
     "composite": true
   },
   "include": [

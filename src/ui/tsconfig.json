@@ -1,10 +1,12 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "paths": {
       "ui/*": [ "./*" ],
       "shared/*": [ "../shared/*" ]
     },
     "outDir": "../../build/ui",
+    "jsx": "react",
     "composite": true
   },
   "references": [
