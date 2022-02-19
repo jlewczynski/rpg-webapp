@@ -2,7 +2,7 @@ import React from 'react';
 
 async function test(): Promise<string> {
   try {
-    const result = await fetch('http://localhost:8888/api/v1/test');
+    const result = await fetch('/api/v1/test');
     return await result.text();
   } catch (e) {
     console.log(e);
