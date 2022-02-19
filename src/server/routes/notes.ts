@@ -11,10 +11,10 @@ notesRouter.get('/', (req, res) => {
 notesRouter.get('/:id', (req, res) => {
   res.json({ body: 'note 1'});
 });
-notesRouter.post('/:id', (req, res) => {
+notesRouter.put('/', (req, res) => {
   res.json({ message: 'ok' });
 });
-notesRouter.put('/', (req, res) => {
+notesRouter.post('/', (req, res) => {
   res.json({ id: '3' });
 });
 notesRouter.delete('/:id', (req, res) => {

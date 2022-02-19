@@ -11,10 +11,10 @@ userRouter.get('/', (req, res) => {
 userRouter.get('/:id', (req, res) => {
   res.json({ body: 'note 1'});
 });
-userRouter.post('/:id', (req, res) => {
+userRouter.put('/', (req, res) => {
   res.json({ message: 'ok' });
 });
-userRouter.put('/', (req, res) => {
+userRouter.post('/', (req, res) => {
   res.json({ id: '3' });
 });
 userRouter.delete('/:id', (req, res) => {
